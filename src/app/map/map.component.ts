@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { StateExtractionService } from './services/state-extraction.service';
 import { CommonModule } from '@angular/common';
 import { State } from './models/state';
@@ -9,11 +9,11 @@ import { State } from './models/state';
   templateUrl: './map.component.html',
   styleUrl: './map.component.scss'
 })
-export class MapComponent {
+export class MapComponent implements OnInit {
 
   protected states: State[] = [];
 
-  constructor(private stateExtractionService: StateExtractionService) {}
+  constructor(private stateExtractionService: StateExtractionService) { }
 
   ngOnInit() {
     this.stateExtractionService.getStates().subscribe(
