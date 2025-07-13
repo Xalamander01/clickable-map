@@ -1,0 +1,17 @@
+.usa-map {
+    height: 98vh;
+    width: auto;
+    margin: 0 auto;
+}
+
+.state-path {
+    fill: #4a90e2;
+    stroke: #ffffff;
+    stroke-width: 1;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+.state-path:hover {
+    fill: #357abd;
+}

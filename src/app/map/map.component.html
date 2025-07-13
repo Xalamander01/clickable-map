@@ -1,0 +1,9 @@
+<svg viewBox="0 0 959 593" class="usa-map">
+    <path 
+      *ngFor="let state of states" 
+      [attr.d]="state.d"
+      [attr.id]="state.code"
+      class="state-path"
+      (click)="onStateClick(state)">
+    </path>
+  </svg>
