@@ -1,14 +1,14 @@
 import { TestBed } from '@angular/core/testing';
 
-import { StateExtractionService } from './state-extraction.service';
+import { SvgMapService } from './svg-map.service';
 import { provideHttpClient } from '@angular/common/http';
 
-describe('StateExtractionService', () => {
-  let service: StateExtractionService;
+describe('SvgMapService', () => {
+  let service: SvgMapService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({ providers: [provideHttpClient()] });
-    service = TestBed.inject(StateExtractionService);
+    service = TestBed.inject(SvgMapService);
   });
 
   it('should be created', () => {

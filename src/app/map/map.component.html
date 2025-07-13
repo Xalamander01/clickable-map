@@ -1,4 +1,4 @@
-<svg viewBox="0 0 959 593" class="usa-map">
+<svg [attr.viewBox]="'0 0 ' + dimensions.width + ' ' + dimensions.height" class="usa-map">
     <path 
       *ngFor="let state of states" 
       [attr.d]="state.d"
