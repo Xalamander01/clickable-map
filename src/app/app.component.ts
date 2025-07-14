@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MapRegions } from './map/const/map-regions';
+import { MapRegions } from 'clickable-map-lib/map';
 
 @Component({
   selector: 'app-root',

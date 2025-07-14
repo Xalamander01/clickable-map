@@ -1,0 +1,16 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "clickable-map-lib": ["clickable-map-lib/src/index.ts"],
+      "clickable-map-lib/map": ["clickable-map-lib/map/src/index.ts"]
+    }
+  }
+}

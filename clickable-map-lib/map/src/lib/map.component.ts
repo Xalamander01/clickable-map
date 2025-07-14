@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { SvgMapService } from './services/svg-map.service';
-import { CommonModule } from '@angular/common';
-import { State } from './models/state';
-import { ActivatedRoute, RouterModule } from '@angular/router';
-import { MapRegions } from './const/map-regions';
-import { map, switchMap, tap } from 'rxjs';
-import { ViewboxDimensions } from './models/viewbox-dimensions';
+import { CommonModule } from "@angular/common";
+import { Component, OnInit } from "@angular/core";
+import { RouterModule, ActivatedRoute } from "@angular/router";
+import { tap, switchMap } from "rxjs";
+import { MapRegions } from "./const/map-regions";
+import { State } from "./models/state";
+import { ViewboxDimensions } from "./models/viewbox-dimensions";
+import { SvgMapService } from "./services/svg-map.service";
 
 @Component({
-  selector: 'app-map',
+  selector: 'lib-map',
   imports: [CommonModule, RouterModule],
   templateUrl: './map.component.html',
   styleUrl: './map.component.scss'
@@ -32,7 +32,7 @@ export class MapComponent implements OnInit {
     });
   }
 
-  onStateClick(state: any) {
+  onStateClick(state: State) {
     console.log('State clicked:', state);
   }
 }
