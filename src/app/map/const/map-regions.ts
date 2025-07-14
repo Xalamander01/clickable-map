@@ -1,4 +1,5 @@
 export enum MapRegions {
     US = 'united-states',
-    BG = 'bulgaria'
+    BG = 'bulgaria',
+    EU = 'europe'
 }
