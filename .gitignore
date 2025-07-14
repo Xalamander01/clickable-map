@@ -6,6 +6,9 @@
 /e2e/test-output/
 /.angular/
 .angular/
+.nx/
+.verdaccio/
+.vscode/
 
 # Node modules and dependency files
 /node_modules/
