@@ -1,5 +1,5 @@
 import { Route } from '@angular/router';
-import { MapComponent } from '../../map/src/lib/map.component';
+import { MapComponent } from 'clickable-map-lib/map';
 
 export const clickableMapLibRoutes: Route[] = [
   { path: '', component: MapComponent },
