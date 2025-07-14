@@ -35,7 +35,7 @@ export class SvgMapService {
   private extractStatesFromSVG(svg: string): State[] {
     const parser = new DOMParser();
     const doc = parser.parseFromString(svg, 'image/svg+xml');
-    let stateListToReturn: State[] = [];
+    const stateListToReturn: State[] = [];
 
     const stateList = doc.querySelectorAll('g.state')[0].querySelectorAll('path');
 
